@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-principal: #191919;
+  --cor-secundaria: #48CFCB;
+  --cor-terciaria: #229799;
+  --cor-textos: #f6f6f6;
+  --cor-hover: #424242;
+
+  --fonte-principal: Montserrat, sans-serif;
+  --fonte-secundaria: Krona One, serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-principal);
+  color: var(--cor-textos);
+}
+
+.titulo-destaque {
+  color: var(--cor-terciaria);
+}
+
+.cabeçalho {
+  padding: 3% 0% 0% 15%;
+}
+
+.cabeçalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabeçalho__menu__links {
+  font-family: var(--fonte-principal);
+  color: var(--cor-terciaria);
+  font-size: 1.40rem;
+  height: 600;
+  text-decoration: none;
+}
+
+.cabeçalho__menu__links:hover {
+  color: var(--cor-hover);
+  font-size: 1.1875rem;
+}
+
+.apresentaçao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.apresentaçao__conteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70%;
+}
+
+.apresentaçao__titulo {
+  font-size: 2.15rem;
+  font-family: var(--fonte-secundaria);
+  width: 130%;
+}
+
+.apresentaçao__paragrafo {
+  font-size: 1.25rem;
+  font-family: var(--fonte-principal);
+  width: 120%;
+}
+
+.apresentaçao__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 32px;
+}
+
+.apresentaçao__links__link {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  width: 64%;
+  border-radius: 10px;
+  padding: 21.5px 0;
+  text-align: center;
+  font-size: 1.375rem;
+  text-decoration: none;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-principal);
+  font-weight: 36px;
+  border: 2px solid var(--cor-terciaria)
+}
+
+
+.apresentaçao__links__subititulo {
+  font-size: 1.375rem;
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  color: var(--cor-terciaria);
+}
+
+.apresentaçao__links__link:hover {
+  background-color: var(--cor-hover);
+  width: 60%;
+  font-size: 1, 25rem;
+}
+
+.imagem {
+  width: 80%;
+
+}
+
+
+.apresentaçao__rodape {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+  font-size: 1.375rem;
+  font-weight: 400;
+  width: 1920px 800;
+  text-align: center;
+  padding: 24px;
+}
+
+@media (max-width: 1200px) {
+  .cabeçalho {
+    padding: 10%;
+  }
+
+  .cabeçalho__menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .apresentaçao {
+    flex-direction: column-reverse;
+    padding: 10%;
+  }
+
+  .apresentaçao__conteudo {
+    width: auto;
+  }
+
+  .apresentaçao__rodape {
+    width: auto;
+  }
+
+}
+
+:root {
+  --cor-principal: #191919;
+  --cor-secundaria: #48CFCB;
+  --cor-terciaria: #229799;
+  --cor-hover: #424242;
+
+  --fonte-principal: Montserrat, sans-serif;
+  --fonte-secundaria: Krona One, serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-principal);
+  color: white
+}
+
+.cabeçalho__about {
+  padding: 3% 0% 0% 15%;
+}
+
+.cabeçalho__menu__about {
+  display: flex;
+  gap: 80px;
+
+}
+
+.cabeçalho__menu__links__about {
+  color: var(--cor-terciaria);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cabeçalho__menu__links__about:hover {
+  color: var(--cor-hover);
+  font-size: 1.1875rem;
+}
+
+.apresentaçao__about {
+  display: flex;
+  padding: 5% 15%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentaçao__menu {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentaçao__titulo__about {
+  font-family: "Krona One", serif;
+  font-size: 2.25rem;
+  flex-direction: center;
+  gap: 40px;
+  line-height: 175%;
+}
+
+.strong__about {
+  color: var(--cor-terciaria);
+}
+
+.apresentaçao__paragrafo__about {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  width: 100%;
+  display: flex;
+  line-height: 165%;
+}
+
+.rodape__about {
+  background-color: var(--cor-terciaria);
+  color: #000000;
+  padding: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .apresentaçao__about {
+    flex-direction: column-reverse;
+    padding: 10%;
+
+  }
+
+  .apresentaçao__menu {
+    width: auto;
+  }
+
+  .cabeçalho {
+    padding: 10%;
+  }
+
+  .cabeçalho__menu {
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-principal);
+  color: var(--cor-textos);
+}
+
+.cabeçalho__curriculo {
+  padding: 3% 0% 0% 15%;
+}
+
+.cabeçalho__menu__curriculo {
+  display: flex;
+  gap: 80px;
+}
+
+.cabeçalho__links {
+  font-family: var(--fonte-principal);
+  color: var(--cor-terciaria);
+  font-size: 1.25rem;
+  height: 600;
+  text-decoration: none;
+}
+
+.cabeçalho__links:hover {
+  font-size: 1.1875rem;
+  color: var(--cor-hover);
+}
+
+
+.apresentaçao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentaçao__conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  width: 50%;
+
+}
+
+.titulo {
+  font-size: 2.25rem;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  gap: 40px;
+}
+
+.paragrafo {
+  font-size: 1rem;
+  font-family: var(--fonte-principal);
+  color: var(--cor-textos);
+  text-align: start;
+}
+
+.titulo__2 {
+  font-size: 2rem;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-terciaria);
+}
+
+.historico__academico {
+  font-size: 1rem;
+  font-family: var(--fonte-principal);
+  color: var(--cor-textos);
+}
+
+.titulo__3 {
+  font-size: 2rem;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-terciaria);
+}
+
+.qualificaçoes {
+  font-size: 1rem;
+  font-family: var(--fonte-principal);
+  color: var(--cor-textos);
+}
+
+.titulo__4 {
+  font-size: 2rem;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-terciaria);
+}
+
+.cursos {
+  font-size: 1rem;
+  font-family: var(--fonte-principal);
+  color: var(--cor-textos);
+  width: 140%;
+}
+
+.rodape {
+  background-color: var(--cor-terciaria);
+  padding: 1.50rem;
+  font-size: 1.25rem;
+  font-family: var(--fonte-principal);
+  color: var(--cor-principal);
+  text-align: center;
+}
